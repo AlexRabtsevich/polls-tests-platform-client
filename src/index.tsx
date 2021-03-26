@@ -3,18 +3,24 @@ import ReactDOM from 'react-dom';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/core/styles';
 import { BrowserRouter } from 'react-router-dom';
+import { SnackbarProvider } from 'notistack';
 
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import theme from './template/theme';
+import { RootStoreProvider } from './provider';
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <BrowserRouter>
-        <CssBaseline />
-        <App />
+        <SnackbarProvider>
+          <RootStoreProvider>
+            <CssBaseline />
+            <App />
+          </RootStoreProvider>
+        </SnackbarProvider>
       </BrowserRouter>
     </ThemeProvider>
   </React.StrictMode>,

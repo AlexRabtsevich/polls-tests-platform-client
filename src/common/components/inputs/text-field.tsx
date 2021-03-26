@@ -20,9 +20,10 @@ export const TextField: FC<TextFieldProps & IProps> = (props) => {
       color='primary'
       rows={rows || 3}
       fullWidth
-      ref={register}
+      inputRef={register()}
       error={!!errors[name]}
       helperText={<ErrorMessage errors={errors} name={name} />}
+      name={name}
       {...textFieldProps}
     />
   );

@@ -50,5 +50,7 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 'off',
     'arrow-parens': 'error',
     'react/prop-types': 'off',
+    'react/display-name': 'off',
+    '@typescript-eslint/ban-types': 'off',
   },
 };

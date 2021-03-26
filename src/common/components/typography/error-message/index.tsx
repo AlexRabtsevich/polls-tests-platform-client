@@ -9,7 +9,7 @@ interface IProps {
 
 const useStyles = makeStyles({
   root: {
-    fontSize: '0.875rem',
+    fontSize: '0.8rem',
     fontWeight: 400,
   },
 });
@@ -17,10 +17,10 @@ const useStyles = makeStyles({
 export const ErrorMessage: FC<IProps> = ({ errors, name }) => {
   const classes = useStyles();
 
-  if (errors[name]) {
+  if (errors[name] && errors[name].message) {
     return (
-      <Typography color='error' className={classes.root}>
-        {errors[name]}
+      <Typography color='textPrimary' className={classes.root}>
+        {errors[name].message}
       </Typography>
     );
   }

@@ -5,7 +5,7 @@ import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 
 import { TextWithIcon } from '../../typography/text-with-icon';
 import { Span } from '../../typography/span';
-import { Routes } from '../../../utils/routes';
+import { Routes } from '../../../../routes';
 
 const getBackToSearchStyles = makeStyles({
   icon: {
@@ -15,7 +15,7 @@ const getBackToSearchStyles = makeStyles({
 
 export const BackToSearchButton: FC = () => {
   const history = useHistory();
-  const onRedirectToSearch = useCallback(() => history.push(Routes.Search), [history]);
+  const onRedirectToSearch = useCallback(() => history.push(Routes.Home), [history]);
   const classes = getBackToSearchStyles();
 
   return (

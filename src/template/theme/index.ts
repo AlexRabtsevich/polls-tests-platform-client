@@ -1,18 +1,18 @@
 import { PaletteOptions } from '@material-ui/core/styles/createPalette';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { Overrides } from '@material-ui/core/styles/overrides';
-import { eastBay10Alpha } from '../colors';
+import { eastBay10Alpha, primaryColor, primaryTextColor, secondaryColor, secondaryTextColor } from '../colors';
 
 const palette: PaletteOptions = {
   primary: {
-    main: '#2196f3',
+    main: primaryColor,
   },
   secondary: {
-    main: '#f44336',
+    main: secondaryColor,
   },
   text: {
-    primary: '#232f40',
-    secondary: '#636b77',
+    primary: primaryTextColor,
+    secondary: secondaryTextColor,
   },
 };
 
@@ -33,6 +33,13 @@ const overrides: Overrides = {
   MuiLink: {
     root: {
       cursor: 'pointer',
+    },
+  },
+  MuiOutlinedInput: {
+    root: {
+      '&.Mui-error': {
+        backgroundColor: '#ffebee',
+      },
     },
   },
 };
