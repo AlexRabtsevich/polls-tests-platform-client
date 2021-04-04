@@ -14,52 +14,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d51e59fc-3604-49cb-9d0a-2aa16cd62096" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/common/components/header/components/login-links.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/components/header/components/navigation-links.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/components/header/components/profile-menu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/components/header/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/components/header/style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/hook/use-alert-error.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/hook/use-base-authorization-service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/services/error-services/error-forbidden-service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/services/error-services/error-handling-service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/services/error-services/error-internal-server-service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/services/error-services/error-unauthorized-service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/services/error-services/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/typings/query-state.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hoc/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hoc/with-alert-handling.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hoc/with-initialize-profile.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/error/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/error/style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/provider/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/provider/root-store-provider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/provider/use-store.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/private-router-wrapper.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/profile-store.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/root-store.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/template/images/error-image.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/api/poll-api/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/components/buttons/text-icon-button/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/components/forms/form-image/box-image.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/components/forms/form-image/drop-zone-image.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/components/forms/form-image/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/components/forms/form-image/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/components/modal/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/components/modal/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/hook/use-poll-api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/typings/poll.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/create-poll/components/create-poll-modal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/create-poll/components/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/create-poll/utils.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/api/http-clients/base-http-client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/api/http-clients/base-http-client.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/components/buttons/back-to-search-button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/buttons/back-to-search-button/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/api/account-api/secure-account-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/api/account-api/secure-account-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/components/buttons/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/buttons/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/components/forms/form-add-item-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/forms/form-add-item-button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/components/forms/form-item/form-item-footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/forms/form-item/form-item-footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/components/forms/form-item/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/forms/form-item/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/components/forms/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/forms/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/constants/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/constants/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/hook/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/hook/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/services/authorization-service/base-authorization-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/services/authorization-service/base-authorization-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/services/authorization-service/secure-authorization-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/services/authorization-service/secure-authorization-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/services/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/typings/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/typings/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/utils/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/utils/routes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/components/login-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/components/login-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/registration/components/registration-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registration/components/registration-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/search/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/search/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/images/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/images/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/create-poll/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/create-poll/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,6 +80,8 @@
       <recent name="$PROJECT_DIR$/src/pages/login/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/common/components/forms/form-image" />
+      <recent name="$PROJECT_DIR$/src/common/components/forms/form-item" />
       <recent name="$PROJECT_DIR$/src/common/api/http-clients" />
       <recent name="$PROJECT_DIR$/src/pages/login/components" />
     </key>
@@ -128,6 +110,14 @@
       <workItem from="1616847923221" duration="8726000" />
       <workItem from="1616863096060" duration="11910000" />
       <workItem from="1616924895905" duration="28291000" />
+      <workItem from="1617000176382" duration="13000" />
+      <workItem from="1617219635496" duration="4901000" />
+      <workItem from="1617298819419" duration="11180000" />
+      <workItem from="1617345747960" duration="7000" />
+      <workItem from="1617454907506" duration="15912000" />
+      <workItem from="1617524430043" duration="23362000" />
+      <workItem from="1617604535056" duration="322000" />
+      <workItem from="1618133266739" duration="13360000" />
     </task>
     <servers />
   </component>
@@ -167,13 +157,15 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2092" y="127" width="1648" height="853" key="DiffContextDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1616259209759" />
-    <state x="778" y="310" width="426" height="493" key="FileChooserDialogImpl" timestamp="1616958119161">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state x="2654" y="290" width="426" height="493" key="FileChooserDialogImpl" timestamp="1618137787682">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2391" y="326" width="426" height="493" key="FileChooserDialogImpl/0.27.3840.1053@0.27.3840.1053" timestamp="1616874088908" />
-    <state x="2654" y="290" width="426" height="493" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1616790874442" />
+    <state x="2654" y="290" width="426" height="493" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1618137787682" />
     <state x="778" y="310" width="426" height="493" key="FileChooserDialogImpl/1920.0.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1616244159131" />
-    <state x="778" y="310" width="426" height="493" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1616958119161" />
+    <state x="2654" y="290" key="FileChooserDialogImpl/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617345751756" />
+    <state x="778" y="310" width="426" height="493" key="FileChooserDialogImpl/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1617604855869" />
+    <state x="778" y="310" width="426" height="493" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1617224286533" />
     <state x="2498" y="298" width="826" height="517" key="IDE.errors.dialog" timestamp="1616233490183">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -182,9 +174,14 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2404" y="188" width="1024" height="737" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1616790866561" />
-    <state x="660" y="252" key="run.anything.popup" timestamp="1616956968379">
+    <state x="686" y="278" width="620" height="550" key="find.popup" timestamp="1617220756527">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
+    <state x="686" y="278" width="620" height="550" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1617220756527" />
+    <state x="2531" y="231" key="run.anything.popup" timestamp="1618141984893">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2531" y="231" key="run.anything.popup/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1618141984893" />
     <state x="660" y="252" key="run.anything.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1616956968379" />
     <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1616938501667">
       <screen x="72" y="27" width="1848" height="1053" />

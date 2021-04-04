@@ -1,5 +1,5 @@
 import React, { FC, useCallback } from 'react';
-import { makeStyles } from '@material-ui/core';
+import { createStyles, makeStyles, Theme } from '@material-ui/core';
 import { Link } from '@material-ui/core';
 import { BottomNavigation, BottomNavigationAction } from '@material-ui/core';
 import { useHistory, useLocation } from 'react-router-dom';
@@ -7,25 +7,31 @@ import { useHistory, useLocation } from 'react-router-dom';
 import { Routes } from '../../../../routes';
 import { Span } from '../../typography/span';
 
-const getNavigationLinksStyles = makeStyles({
-  root: {
-    paddingLeft: '1rem',
-    flexGrow: 1,
-    '& .MuiBottomNavigation-root': {
-      background: 'none',
+const getNavigationLinksStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    root: {
+      paddingLeft: '1rem',
+      height: '100%',
+      flexGrow: 1,
+      '& .MuiBottomNavigation-root': {
+        background: 'none',
+        height: '100%',
 
-      '& .MuiBottomNavigationAction-label': {
-        color: 'white',
-        fontSize: '1rem',
+        '& .Mui-selected': {
+          borderBottom: `3px solid ${theme.palette.primary.dark}`,
 
-        '&.Mui-selected': {
-          color: 'black',
-          borderBottom: '2px solid black',
+          '& .MuiBottomNavigationAction-label': {
+            border: 'none',
+          },
+        },
+        '& .MuiBottomNavigationAction-label': {
+          color: theme.palette.primary.dark,
+          fontSize: '1rem',
         },
       },
     },
-  },
-});
+  }),
+);
 
 interface INavigationLink {
   name: string;

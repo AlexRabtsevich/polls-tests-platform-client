@@ -28,13 +28,11 @@ export const Header: FC = observer(() => {
     return null;
   }
 
-  console.log(profileStore.isAuthorized);
-
   return (
-    <AppBar position='static'>
+    <AppBar position='static' className={classes.header}>
       <Toolbar className={classes.root}>
         {isDesktopView ? <Span className={classes.logo}>{LOGO_TEXT}</Span> : <BurgerMenu />}
-        {isDesktopView && <NavigationLinks />}
+        {isDesktopView && profileStore.isAuthorized && <NavigationLinks />}
         {profileStore.isAuthorized ? <ProfileMenu /> : <LoginLinks />}
       </Toolbar>
     </AppBar>

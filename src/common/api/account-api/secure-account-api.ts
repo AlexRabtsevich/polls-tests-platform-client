@@ -1,4 +1,4 @@
-import { SecureHttpClient } from '../http-clients/secure-http-client';
+import { SecureHttpClient } from '../http-clients';
 import { getData } from '../http-clients/response';
 import { IProfile } from '../../typings';
 

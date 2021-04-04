@@ -16,7 +16,6 @@ export const TextField: FC<TextFieldProps & IProps> = (props) => {
     <MaterialTextField
       InputProps={InputProps}
       className={className}
-      variant='outlined'
       color='primary'
       rows={rows || 3}
       fullWidth
@@ -27,4 +26,8 @@ export const TextField: FC<TextFieldProps & IProps> = (props) => {
       {...textFieldProps}
     />
   );
+};
+
+TextField.defaultProps = {
+  variant: 'outlined',
 };

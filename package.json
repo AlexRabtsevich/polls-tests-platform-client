@@ -13,6 +13,10 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "axios": "^0.21.1",
+    "filepond": "^4.26.1",
+    "filepond-plugin-file-validate-type": "^1.2.6",
+    "filepond-plugin-image-exif-orientation": "^1.0.11",
+    "filepond-plugin-image-preview": "^4.6.6",
     "http-status": "^1.5.0",
     "jwt-decode": "^3.1.2",
     "lodash.memoize": "^4.1.2",
@@ -21,10 +25,13 @@
     "notistack": "^1.0.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-dropzone": "^11.3.2",
+    "react-filepond": "^7.1.1",
     "react-hook-form": "^6.15.5",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "typescript": "^4.1.2",
+    "uuid": "^8.3.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -56,6 +63,7 @@
   "devDependencies": {
     "@types/lodash.memoize": "^4.1.6",
     "@types/react-router-dom": "^5.1.7",
+    "@types/uuid": "^8.3.0",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-import": "^2.22.1",

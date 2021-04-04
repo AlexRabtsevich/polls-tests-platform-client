@@ -10,7 +10,7 @@ export enum Routes {
   CreatePoll = '/create-poll',
 }
 
-export const publicRouteList = [Routes.Login, Routes.Registration, Routes.Home, Routes.ErrorPage];
+export const publicRouteList = [Routes.Login, Routes.Registration, Routes.Home, Routes.ErrorPage, Routes.CreatePoll];
 
 export const routesWithComponent = [
   {
@@ -24,5 +24,13 @@ export const routesWithComponent = [
   {
     path: Routes.Home,
     component: lazy(() => import('../pages/search')),
+  },
+  {
+    path: Routes.ErrorPage,
+    component: lazy(() => import('../pages/error')),
+  },
+  {
+    path: Routes.CreatePoll,
+    component: lazy(() => import('../pages/create-poll')),
   },
 ];

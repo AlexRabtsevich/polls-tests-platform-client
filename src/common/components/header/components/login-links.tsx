@@ -1,24 +1,25 @@
 import React, { FC } from 'react';
-import { Box, Button, makeStyles } from '@material-ui/core';
+import { Box, Button, createStyles, makeStyles, Theme } from '@material-ui/core';
 import { Routes } from '../../../../routes';
 import { useHistory } from 'react-router-dom';
 
-const getStyles = makeStyles({
-  root: {
-    display: 'flex',
-    gap: '1rem',
+const getStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    root: {
+      display: 'flex',
+      gap: '1.5rem',
 
-    '& .MuiButtonBase-root': {
-      color: 'white',
-      fontWeight: 'bold',
+      '& .MuiButtonBase-root': {
+        fontWeight: 'bold',
+      },
     },
-  },
-
-  signUpButton: {
-    borderColor: 'white',
-    borderWidth: '2px',
-  },
-});
+    signUpButton: {
+      borderWidth: '2px',
+      borderColor: theme.palette.primary.main,
+      color: theme.palette.primary.main,
+    },
+  }),
+);
 
 export const LoginLinks: FC = () => {
   const history = useHistory();
