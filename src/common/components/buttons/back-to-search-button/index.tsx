@@ -15,7 +15,7 @@ const getBackToSearchStyles = makeStyles({
 
 export const BackToSearchButton: FC = () => {
   const history = useHistory();
-  const onRedirectToSearch = useCallback(() => history.push(Routes.Home), [history]);
+  const onRedirectToSearch = useCallback(() => history.push(Routes.Search), [history]);
   const classes = getBackToSearchStyles();
 
   return (

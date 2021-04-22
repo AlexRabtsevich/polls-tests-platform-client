@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import { FieldErrors } from 'react-hook-form/dist/types';
-import { makeStyles, Typography } from '@material-ui/core';
+import { makeStyles, Typography, TypographyProps, TypographyTypeMap } from '@material-ui/core';
 
-interface IProps {
+interface IProps extends Pick<TypographyProps, 'color'> {
   name: string;
   errors: FieldErrors<Record<string, any>>;
 }
@@ -14,12 +14,12 @@ const useStyles = makeStyles({
   },
 });
 
-export const ErrorMessage: FC<IProps> = ({ errors, name }) => {
+export const ErrorMessage: FC<IProps> = ({ errors, name, color }) => {
   const classes = useStyles();
 
   if (errors[name] && errors[name].message) {
     return (
-      <Typography color='textPrimary' className={classes.root}>
+      <Typography color={color} className={classes.root}>
         {errors[name].message}
       </Typography>
     );

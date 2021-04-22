@@ -42,7 +42,7 @@ const ErrorPage: FC = () => {
             <Span className={classes.message}>{errorMessage.message}</Span>
           </Grid>
           <Grid item className={classes.button}>
-            <Button onClick={() => history.push(Routes.Home)} variant='contained' color='primary'>
+            <Button onClick={() => history.push(Routes.Search)} variant='contained' color='primary'>
               {'Go to home page'}
             </Button>
           </Grid>

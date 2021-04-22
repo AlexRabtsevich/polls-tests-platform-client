@@ -1,8 +1,9 @@
-import React, { FC, useCallback, useEffect } from 'react';
+import React, { FC, useCallback, useEffect, useMemo } from 'react';
 import Card from '@material-ui/core/Card';
 import { Grid } from '@material-ui/core';
 import { useDropzone } from 'react-dropzone';
 import { useFieldArray, useFormContext, Controller } from 'react-hook-form';
+import RadioGroup from '@material-ui/core/RadioGroup';
 
 import { FormItemFooter } from './form-item-footer';
 import { FormItemAnswer } from './form-item-answer';
@@ -10,13 +11,16 @@ import { getFormItemStyles } from './style';
 import { useFocusElement } from '../../../hook';
 import { TextField } from '../../inputs';
 import { BoxImage } from '../form-image/box-image';
+import { PollAndTestType } from '../../../typings';
+import { isTestType } from '../../../utils';
 
 interface IProps {
   removeItem: () => void;
   itemIndex: number;
+  type: PollAndTestType;
 }
 
-export const FormItem: FC<IProps> = ({ removeItem, itemIndex }) => {
+export const FormItem: FC<IProps> = ({ removeItem, itemIndex, type }) => {
   const { control, setValue } = useFormContext();
   const { isFocusedElement, onBlurElement, onFocusElement } = useFocusElement();
   const classes = getFormItemStyles({ isFocusedItem: isFocusedElement });
@@ -51,6 +55,18 @@ export const FormItem: FC<IProps> = ({ removeItem, itemIndex }) => {
 
   const appendAnswer = useCallback(() => append({ variant: '' }), [append]);
 
+  const formItemAnswers = useMemo(() => {
+    return fields.map((item, index) => (
+      <FormItemAnswer
+        isCanRemove={fields.length > 1 && isFocusedElement}
+        key={item.id}
+        removeAnswer={() => remove(index)}
+        fieldName={`items[${itemIndex}].answers[${index}]`}
+        type={type}
+      />
+    ));
+  }, [fields, isFocusedElement, itemIndex, remove, type]);
+
   return (
     <Card className={classes.root} onBlur={onBlurElement} onFocus={onFocusElement}>
       <Grid container direction='column'>
@@ -61,14 +77,15 @@ export const FormItem: FC<IProps> = ({ removeItem, itemIndex }) => {
           <BoxImage fieldImageName={`items[${itemIndex}].image`} />
         </Grid>
         <Grid item>
-          {fields.map((item, index) => (
-            <FormItemAnswer
-              isCanRemove={fields.length > 1 && isFocusedElement}
-              key={item.id}
-              removeAnswer={() => remove(index)}
-              fieldName={`items[${itemIndex}].answers[${index}].variant`}
+          {isTestType(type) ? (
+            <Controller
+              name={`items[${itemIndex}].rightAnswer`}
+              control={control}
+              render={(props) => <RadioGroup {...props}>{formItemAnswers}</RadioGroup>}
             />
-          ))}
+          ) : (
+            formItemAnswers
+          )}
         </Grid>
         <Grid item>
           <Controller

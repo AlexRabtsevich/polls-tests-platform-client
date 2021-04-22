@@ -22,7 +22,7 @@ export const LoginForm: FC = () => {
   const onLogin = useCallback(
     async (formData: ILogin) => {
       await baseAccountApi.login(formData);
-      history.replace(Routes.Home);
+      history.replace(Routes.Search);
     },
     [baseAccountApi, history],
   );

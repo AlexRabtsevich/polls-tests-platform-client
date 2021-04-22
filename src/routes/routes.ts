@@ -3,14 +3,15 @@ import { lazy } from 'react';
 export enum Routes {
   Login = '/login',
   Registration = '/registration',
-  Home = '/',
+  Search = '/',
   Profile = '/profile',
   ErrorPage = '/error',
   CreateTest = '/create-test',
   CreatePoll = '/create-poll',
+  PollAnswer = '/poll-answer/:id',
 }
 
-export const publicRouteList = [Routes.Login, Routes.Registration, Routes.Home, Routes.ErrorPage, Routes.CreatePoll];
+export const publicRouteList = [Routes.Login, Routes.Registration, Routes.Search, Routes.ErrorPage, Routes.CreatePoll];
 
 export const routesWithComponent = [
   {
@@ -22,7 +23,7 @@ export const routesWithComponent = [
     component: lazy(() => import('../pages/registration')),
   },
   {
-    path: Routes.Home,
+    path: Routes.Search,
     component: lazy(() => import('../pages/search')),
   },
   {
@@ -32,5 +33,13 @@ export const routesWithComponent = [
   {
     path: Routes.CreatePoll,
     component: lazy(() => import('../pages/create-poll')),
+  },
+  {
+    path: Routes.CreateTest,
+    component: lazy(() => import('../pages/create-test')),
+  },
+  {
+    path: Routes.PollAnswer,
+    component: lazy(() => import('../pages/poll-answer')),
   },
 ];

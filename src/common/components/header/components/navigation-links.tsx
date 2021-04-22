@@ -39,12 +39,12 @@ interface INavigationLink {
 }
 
 export const AUTHORIZED_NAVIGATION_LINKS: INavigationLink[] = [
-  { name: 'Home', path: Routes.Home },
+  { name: 'Search', path: Routes.Search },
   { name: 'Create test', path: Routes.CreateTest },
   { name: 'Create Poll', path: Routes.CreatePoll },
 ];
 
-export const NAVIGATION_LINKS: INavigationLink[] = [{ name: 'Home', path: Routes.Home }];
+export const NAVIGATION_LINKS: INavigationLink[] = [{ name: 'Search', path: Routes.Search }];
 
 export const NavigationLinks: FC = () => {
   const classes = getNavigationLinksStyles();

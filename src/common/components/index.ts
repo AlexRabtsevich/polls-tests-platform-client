@@ -5,3 +5,5 @@ export * from './typography';
 export * from './loader';
 export * from './forms';
 export * from './modal';
+export * from './date-picker';
+export * from './chips';

@@ -18,7 +18,7 @@ export const getFormItemAnswerStyles = makeStyles((theme: Theme) =>
       justifyContent: 'flex-start',
       height: '3rem',
       alignItems: 'center',
-      margin: '1rem 0',
+      margin: '0.5rem 0',
       gap: '0.2rem',
 
       '& .MuiRadio-root': {

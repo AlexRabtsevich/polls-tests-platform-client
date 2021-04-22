@@ -1,5 +1,5 @@
 import { BaseAuthorizationService } from '../../services/authorization-service';
-import { BaseHttpClient } from '../http-clients/base-http-client';
+import { BaseHttpClient } from '../http-clients';
 import { IAuthorizationPayload, ICreateAccount, ILogin, IProfile } from '../../typings';
 import { getData } from '../http-clients/response';
 

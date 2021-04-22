@@ -5,3 +5,4 @@ export { useBaseAuthorizationService } from './use-base-authorization-service';
 export { useErrorAlert } from './use-alert-error';
 export { useFocusElement } from './use-focus-element';
 export { usePollApi } from './use-poll-api';
+export { useToggle } from './use-toggle';

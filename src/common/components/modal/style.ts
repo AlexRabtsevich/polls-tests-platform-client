@@ -55,8 +55,9 @@ export const getModalStyles = makeStyles((theme: Theme) =>
       justifyContent: 'space-between',
       alignItems: 'center',
       paddingBottom: theme.spacing(3.5),
-      '& > h1': {
+      '& > h5': {
         marginBottom: 0,
+        fontWeight: 600,
       },
     },
     actionBar: {
